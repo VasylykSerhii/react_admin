@@ -1,0 +1,25 @@
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  background-color: #282828;
+  height: 100vh;
+  padding: 0 25px;
+
+  &__logo{
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+    height: 50px;
+    align-items: center;
+    display: flex;
+  }
+
+  &__icon{
+    width: 30px;
+    display: flex;
+    font-size: 14px;
+    margin-right: 15px;
+    justify-content: center;
+  }
+}

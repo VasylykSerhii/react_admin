@@ -1,0 +1,26 @@
+.drop-down-menu{
+  overflow: hidden;
+  max-height: 50px;
+  transition: all 1s ;
+
+  &.open{
+    max-height: 100%;
+  }
+
+  &__name{
+    margin-top: 10px;
+    line-height: 40px;
+
+  }
+  &__items{
+    
+    display: flex;
+    flex-direction: column;
+
+    a{
+      line-height: 40px;
+    }
+
+  }
+}
+

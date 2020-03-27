@@ -5,8 +5,8 @@ import {
   Route
 } from "react-router-dom";
 
-import Home from '../pages/home'
-import About from '../pages/about'
+import Home from '../../pages/home'
+import About from '../../pages/about'
 import Sidebar from '../sidebar'
 
 import './reset.css';

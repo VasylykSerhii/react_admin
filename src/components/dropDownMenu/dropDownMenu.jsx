@@ -1,44 +1,42 @@
-import React, { Component } from 'react'
+import React, {useState, useRef } from 'react'
 import './dropDownMenu.scss'
-// import { Collapse } from '@material-ui/core'
-
-// import Collapse from 'react-bootstrap/Collapse'
 
 
 
-export default class DropDownMenu extends Component {
-  state = {
-    isOpen: false,
+function DropDownMenu(props) {
+  const [setActive, setOpenToggle] = useState('')
+  const [setHeight, setHeightToggle] = useState('0px')
+
+  const content = useRef(null);
+
+  const toggleActive = () => {
+    setOpenToggle(setActive === '' ? 'active' : '')
+    setHeightToggle(setActive === '' ? `${content.current.scrollHeight}px` : `0px`)
   }
 
-  toggleOpen = () => {
-    this.setState(({isOpen}) => ({
-      isOpen: !isOpen,
-    }))
-  }
-
-
-  render() {
-    const openCls = this.state.isOpen ? 'open' : ''
-
-    return (
-      <div className={'drop-down-menu ' + openCls}>
-      <div className='drop-down-menu__name' onClick={this.toggleOpen}>{this.props.name}</div>
-         <div className='drop-down-menu__items'>
-           {this.props.children}
-         </div>
+  
+  console.log(props);
+  const isUser =  props.img ? "user" : '';
+  
+  
+  return (
+    <div className={`drop-down-menu ${isUser}`}>
+      <div className={`drop-down-menu__name ${setActive} ${isUser}`} onClick={toggleActive}>
+         {
+           props.img ?
+            <img src={props.img} alt=""/>
+           : 
+           <span className='drop-down-menu__icon'>{props.icon}</span>  
+         }
+        
+        {props.name}
       </div>
-    )
-  }
+      <div className='drop-down-menu__items' ref={content} style={{ maxHeight: `${setHeight}` }}>
+      <span className='drop-down-menu__items-icon'>{props.children.icon}</span>  
+        {props.children}
+      </div>
+    </div>
+  )
 }
 
-
-
-{/* <div className='drop-down-menu'>
-<div className='drop-down-menu__name' onClick={this.toggleOpen}>{this.props.name}</div>
- <Collapse in={this.state.isOpen}  >
-   <div className='drop-down-menu__items'>
-   {this.props.children}
-   </div>
-  </Collapse>
-</div> */}
+export default DropDownMenu

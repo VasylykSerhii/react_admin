@@ -1,0 +1,150 @@
+.configuration{
+  &__table{
+    margin-top: 24px;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  &__head{
+    color: #8e24aa;
+  }
+
+  &__row{
+    min-height: 56px;
+    min-width: 450px;
+    word-break: break-all;
+    display: grid;
+    grid-template-columns: 50px 0.6fr 1fr;
+    align-items: center;
+    display: grid;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+
+    div{
+      padding: 12px 8px;
+    }
+  }
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+
+.modal{
+  position: fixed;
+  width: calc(100% - 260px);
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s ease;
+
+  &.open{
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  &__bg{
+    background-color: rgba(#222, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  &__btn{
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+
+    &.update{
+      border-color: #49cc90;
+      color: #49cc90;
+    }
+
+    &.delete{
+      border-color: #f93e3e;
+      color: #f93e3e
+    }
+
+    &-wrap{
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__form{
+    border: 1px solid rgba(#fff, .5);
+    background-color: rgba(#222, .5);
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 15px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+
+    h4{
+      line-height: 1;
+      margin: 0;
+      margin-top: 10px;
+      color: #fff;
+      padding-left: 5px;
+    }
+
+    & > input,
+    textarea{
+      margin-top: 15px;
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid rgba(#fff, .5);
+      padding: 10px 15px;
+      border-radius: 5px
+    }
+
+    textarea{
+      min-height: 100px;
+      resize: none;
+    }
+  }
+
+  &__icon{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+
+    path{
+      fill: #fff;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 959px) {
+  .modal{
+    width: 100%;
+ }
+}

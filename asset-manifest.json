@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react_admin/static/css/main.179fb5e8.chunk.css",
-    "main.js": "/react_admin/static/js/main.ac9a0f4e.chunk.js",
-    "main.js.map": "/react_admin/static/js/main.ac9a0f4e.chunk.js.map",
-    "runtime-main.js": "/react_admin/static/js/runtime-main.facdc578.js",
-    "runtime-main.js.map": "/react_admin/static/js/runtime-main.facdc578.js.map",
-    "static/js/2.b0442227.chunk.js": "/react_admin/static/js/2.b0442227.chunk.js",
-    "static/js/2.b0442227.chunk.js.map": "/react_admin/static/js/2.b0442227.chunk.js.map",
+    "main.css": "/react_admin/static/css/main.c0d4a89a.chunk.css",
+    "main.js": "/react_admin/static/js/main.45fa30ac.chunk.js",
+    "main.js.map": "/react_admin/static/js/main.45fa30ac.chunk.js.map",
+    "runtime~main.js": "/react_admin/static/js/runtime~main.ee8e0d8f.js",
+    "runtime~main.js.map": "/react_admin/static/js/runtime~main.ee8e0d8f.js.map",
+    "static/css/2.d0176e96.chunk.css": "/react_admin/static/css/2.d0176e96.chunk.css",
+    "static/js/2.e13a8d63.chunk.js": "/react_admin/static/js/2.e13a8d63.chunk.js",
+    "static/js/2.e13a8d63.chunk.js.map": "/react_admin/static/js/2.e13a8d63.chunk.js.map",
     "index.html": "/react_admin/index.html",
-    "precache-manifest.a1e7e692170a1db3feadb51895de6f0c.js": "/react_admin/precache-manifest.a1e7e692170a1db3feadb51895de6f0c.js",
+    "precache-manifest.bb8f630e9475e182c851c6a575e9e9bd.js": "/react_admin/precache-manifest.bb8f630e9475e182c851c6a575e9e9bd.js",
     "service-worker.js": "/react_admin/service-worker.js",
-    "static/css/main.179fb5e8.chunk.css.map": "/react_admin/static/css/main.179fb5e8.chunk.css.map",
-    "static/js/2.b0442227.chunk.js.LICENSE.txt": "/react_admin/static/js/2.b0442227.chunk.js.LICENSE.txt"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.facdc578.js",
-    "static/js/2.b0442227.chunk.js",
-    "static/css/main.179fb5e8.chunk.css",
-    "static/js/main.ac9a0f4e.chunk.js"
-  ]
+    "static/css/2.d0176e96.chunk.css.map": "/react_admin/static/css/2.d0176e96.chunk.css.map",
+    "static/css/main.c0d4a89a.chunk.css.map": "/react_admin/static/css/main.c0d4a89a.chunk.css.map",
+    "static/media/marc.jpg": "/react_admin/static/media/marc.8880a65c.jpg",
+    "static/media/sidebar-1.jpg": "/react_admin/static/media/sidebar-1.8e9f0a3c.jpg",
+    "static/media/sidebar-2.jpg": "/react_admin/static/media/sidebar-2.310509c9.jpg",
+    "static/media/sidebar-3.jpg": "/react_admin/static/media/sidebar-3.25031690.jpg",
+    "static/media/sidebar-4.jpg": "/react_admin/static/media/sidebar-4.fc9cb053.jpg"
+  }
 }
